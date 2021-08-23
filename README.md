@@ -23,3 +23,16 @@ echo "screen -AmdS Server java -jar -Xmx700M paper.jar" > start.sh
 chmod +x start.sh
 ./start.sh
 ```
+
+## [オプション](option)
+
+### [テスト用サーバー](option/test-server.sh)
+
+- ネザー無し
+- エンド無し
+- フラットワールド
+
+```shell
+(echo "allow-nether=false"; echo "level-type=flat") > server.properties
+echo "settings.allow-end: false" > bukkit.yml
+```
