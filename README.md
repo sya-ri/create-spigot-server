@@ -11,7 +11,6 @@ ufw default deny
 ufw allow 22
 ufw allow 25565
 ufw --force enable
-mkdir Server && cd $_
 wget https://papermc.io/api/v1/paper/1.17.1/latest/download -O paper.jar
 echo "screen -AmdS Server java -jar -Xmx700M paper.jar" > start.sh
 chmod +x start.sh
